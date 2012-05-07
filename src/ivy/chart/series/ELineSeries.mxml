@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:LineSeries xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   fill="{colorf.lineFill}"
+			   stroke="{colorf.lineSroke}"
+			   xmlns:resource="ivy.resource.*">
+	<fx:Declarations>
+		<resource:ColorS id="colorf"
+						 style="{ColorS.onlylinechart}"/>
+	</fx:Declarations>
+	<mx:showDataEffect>
+		<mx:SeriesSlide elementOffset="10"/>
+	</mx:showDataEffect>
+</mx:LineSeries>
