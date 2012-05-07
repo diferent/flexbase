@@ -75,9 +75,9 @@ package ivy.core.http
 			Alert.show("发送请求出错:" + event.fault.faultString + "\n详细信息：" + event.fault.faultDetail , "错误" );
 		}
 
-		private var tradition:Boolean;
-		private var _waitui:IWait;
-		private var waitstateon:Boolean;
+		protected var tradition:Boolean;
+		protected var _waitui:IWait;
+		protected var waitstateon:Boolean;
 
 		protected function waitoff(e:Event=null):void
 		{
