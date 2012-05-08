@@ -1,5 +1,7 @@
 package ivy.resource
 {
+	import ivy.core.inter.IDestory;
+
 	import mx.graphics.GradientEntry;
 	import mx.graphics.LinearGradient;
 	import mx.graphics.RadialGradient;
@@ -10,7 +12,7 @@ package ivy.resource
 	 *
 	 * @author holaivy@gmail.com
 	 */
-	public class ColorS
+	public class ColorS implements IDestory
 	{
 		public function ColorS(st:uint=radial)
 		{
@@ -112,7 +114,10 @@ package ivy.resource
 		[Bindable]
 		public function set randomColorArray(value:Array):void
 		{
-
+			sfill.splice(0, sfill.length);
+			stroke.splice(0, stroke.length);
+			lineSroke=null;
+			lineFill=null;
 		}
 
 		public function get style():uint
@@ -129,6 +134,14 @@ package ivy.resource
 			}
 
 		}
+
+		public function destroy(param:*=null):Boolean
+		{
+			// TODO Auto Generated method stub
+			return false;
+		}
+
+
 
 		{
 
