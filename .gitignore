@@ -4,7 +4,12 @@
 .settings/
 .project
 .classpath
-/WebContent/flex/
 /bin/
-.actionScriptProperties
 .flexLibProperties
+.actionScriptProperties
+.flexProperties
+# Build and Release Folders
+bin-debug/
+bin-release/
+# Project property files
+
