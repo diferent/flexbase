@@ -80,7 +80,7 @@ package ivy.view
 
 		public var effect:Boolean=false;
 		public var alphaBase:Number=0.8;
-		private var swf:SWFLoader=new SWFLoader;
+		protected var swf:SWFLoader=new SWFLoader;
 		private var loadindex:Number=-1;
 
 		public function show(b:Boolean=true):void
@@ -110,7 +110,8 @@ package ivy.view
 		
 		public function destroy(param:*=null):Boolean
 		{
-			// TODO Auto Generated method stub
+			swf.autoLoad=false;
+			swf.unloadAndStop();
 			return false;
 		}
 		
