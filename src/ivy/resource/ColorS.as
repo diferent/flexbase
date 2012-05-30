@@ -9,7 +9,7 @@ package ivy.resource
 	import mx.graphics.SolidColorStroke;
 
 	/**
-	 *
+	 * 资源管理
 	 * @author holaivy@gmail.com
 	 */
 	public class ColorS implements IDestory
